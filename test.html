@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn=document.getElementById("btn");
+    var name=document.getElementById("name").value;
+    var email=document.getElementById("email").value;
+    var subject= document.getElementById("subject").value;
+    var message=document.getElementById("message").value;
+    var body = "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message;
+
+    btn.addEventListener('click',funciton(e)){
+
+        e.preventDefault();
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "thegamechanger312@gmail.com",
+    Password : "TheGameChanger69",
+    To : 'thegamechanger312@gmail.com',
+    From : email,
+    Subject : subject,
+    Body : body
+}).then(
+  message => alert(message)
+);}
+</script>
+<body>
+    
+<form method="post">
+    <label for="name">Your Name</label>
+    <input type="text"  name="name" placeholder="Your name..">
+    <label for="mail">Email</label>
+    <input type="email"  name="email" placeholder="Your email..">
+   
+    <label for="message">Message</label>
+    <textarea  name="message" placeholder="Write something.." style="height:200px"></textarea>
+    <button id="btn" >Send</button>
+  </form>
+
+
+</body>
+
+
+</html>

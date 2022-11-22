@@ -265,7 +265,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Navigation media
+Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
 .nav-menu, .nav-menu * {
@@ -1456,3 +1457,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ddd;
 }
+
+.proj1back{
+  background: #D0E4F5 url("F:/IOT/iotlab/images/projects/proj1back.jpg") no-repeat scroll 0px 0px;
+}
+

@@ -95,7 +95,7 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="left-header">
                                 <span><i class="fa fa-phone"></i>051-90852161</span>
-                                <span><i class="fa fa-envelope"></i>iotlab@seecs.edu.pk</span>
+                                <span><i class="fa fa-envelope"></i>rafia.mumtaz@seecs.edu.pk</span>
                             </div> <!-- /.left-header -->
                         </div> <!-- /.col-md-6 -->
                         <div class="col-md-6 col-sm-6">
@@ -125,27 +125,26 @@
                             <div class="menu text-right hidden-sm hidden-xs">
         
                                 <ul>
-                                    <li><a onclick="location.href='index.html'" href="index.html">Home</a></li>
+                                    <li><a onclick="location.href='index.html'">Home</a></li>
                                     
                                     <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
-                                    
-                                    <li class="dropdown">
-                                        <button class="dropbtn">TEAM</button>
-                                        <div class="dropdown-content">
-                                          <a onclick="location.href='team-core.html'" href="team-core.html">Core Team</a>
-                                          <a onclick="location.href='team-rd.html'" href="team-rd.html">R & D Team</a>
-                                        </div>
-                                    </li>
+                                    <li><a  href="#about">Projects</a></li>
+                                    <li> <a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research Grants</a>
+                                    </li> 
     
-                                    <!-- <li><a href="#portfolio">TEAM</a></li> -->
-                                    <li><a onclick="location.href='projects.html'" href="#about">Projects</a></li>
-                                    <li><a onclick="location.href='publications.html'" href="publications.html">Publications</a></li>
-                                    <!-- <li><a onclick="location.href='achievements.html'" href="achievements.html">ACHIEVEMENT</a></li> -->
-                                    <li><a onclick="location.href='achievements-award.html'" href="achievements-award.html">Awards</a></li>
+    
+                                    <li><a onclick="location.href='team.html'" style="text-align:left">Team</a></li>
                                 
-                                <li><a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research grant</a></li>
-                                <li><a onclick="location.href='collaboration.html'" href="collaboration.html">collaborations</a></li>
-
+                                    <li class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">MORE</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a onclick="location.href='publications.html'" href="publications.html" style="text-align: left ">Publications</a>
+                                            
+                                          
+                                                <a onclick="location.href='achievements-award.html'" href="achievements-award.html" style="text-align:left">Awards</a>
+                                        </div>
+                                      </div>
+                                     
                                 </ul>
                             </div> <!-- /.menu -->
                         </div> <!-- /.col-md-8 -->
@@ -158,13 +157,7 @@
                                 
                                 <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
                                 
-                                <li class="dropdown">
-                                    <button class="dropbtn">TEAM</button>
-                                    <div class="dropdown-content">
-                                      <a onclick="location.href='team-core.html'" href="team-core.html">Core Team</a>
-                                      <a onclick="location.href='team-rd.html'" href="team-rd.html">R & D Team</a>
-                                    </div>
-                                </li>
+                                <li><a onclick="location.href='team.html'" style="text-align:left">Team</a></li>
     
                                 <!-- <li><a href="#portfolio">TEAM</a></li> -->
                                 <li><a onclick="location.href='projects.html'" href="#about">Projects</a></li>
@@ -207,16 +200,28 @@
 
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Wheat Rust Disease Detection and Classification using An Ensemble Approach integrating IoT, Edge Computing, and Deep Learning  
-                            </h4>
-                        <p>Wheat leaf rust is one of the widespread fungal diseases which can cause a severe drop in wheat production and a major threat to food security in Pakistan where wheat covers almost 40% of the cultivated land. The detection of wheat rust can be possible through the naked eye, but this method is unsuccessful and time-consuming when we have to monitor the large farming lands. Towards such ends, there is a need to develop a system that can detect wheat rust and classify its severity accurately in the early and subsequent stages in real-time by exploiting technologies such as edge computing, IoT, and deep learning. 
+                       <a href="project1.html"> <h4 class="widget-title">Wheat Rust Disease Detection and Classification using An Ensemble Approach integrating IoT, Edge Computing, and Deep Learning  
+                            </h4></a>
+                        <p class="edited">
+                            PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                            Project Duration: N/A<br>
+                            Funded Grant: N/A <br>
+                            Funding Agnecy: N/A <br>
+                        </p>
+                    
+                        <p><br>Wheat leaf rust is one of the widespread fungal diseases which
+                        can cause a severe drop in wheat production and a major threat
+                        to food security in Pakistan where wheat covers almost 40% of
+                        the cultivated land<a href="project1.html">&nbsp...More</a> </p>
+
+                           
                             
-                        <span class="dots">...</span>
+                        <!-- <span class="dots">...</span>
                         <span class="more">
                             For this purpose, a camera will take the high-resolution picture of the wheat leaf, the image will be processed using edge computing by locally running the deep learning algorithm and the result will be sent to the web portal and mobile app using communication technologies such as wifi or GSM. This would not only help to arrest the problem in real-time but also helps us to enhance the yield of the crop.
                         </span>
-                        <a class="read">read more</a>
-                        </p>
+                        <a class="read">More about this project</a>
+                        </p> -->
                         
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">
@@ -231,15 +236,23 @@
     
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Time-series Analysis and Prediction of Water Quality through Remote Sensing, GIS and IoT
-                                                </h4>
-                        <p>The periodic time series analysis of different aspects of urban areas is essential owing to an increase in population, stressed resources, and lack of technology-based solutions for effective resource management. In this regard, the temporal analysis of water quality holds paramount importance as it is a key ingredient to sustain life on earth. Water quality depends on many factors like precipitation, climate, soil type, vegetation, geology, flow conditions, groundwater, PH level, etc. For this purpose, the remote sensing data from satellites (Sentinel and Landsat), Geographic Information System (GIS) data, and IoT data will be collected to perform water quality trend analysis. 
-                            <span class="dots">...</span>
+                        <a href="project2.html">  <h4 class="widget-title">Time-series Analysis and Prediction of Water Quality through Remote Sensing, GIS and IoT
+                                                </h4></a>
+                        <!-- <p>The periodic time series analysis of different aspects of urban areas is essential owing to an increase in population, stressed resources, and lack of technology-based solutions for effective resource management. In this regard, the temporal analysis of water quality holds paramount importance as it is a key ingredient to sustain life on earth. Water quality depends on many factors like precipitation, climate, soil type, vegetation, geology, flow conditions, groundwater, PH level, etc. For this purpose, the remote sensing data from satellites (Sentinel and Landsat), Geographic Information System (GIS) data, and IoT data will be collected to perform water quality trend analysis.  -->
+                            <p class="edited"> PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                                Project Duration: N/A<br>
+                                Funded Grant: N/A <br>
+                                Funding Agnecy: N/A <br></p>
+
+                                <p>
+                                    <br>The periodic time series analysis of different aspects of urban areas is essential owing to an increase in population, stressed resources, and lack of technology-based solutions for effective resource management
+                            <!-- <span class="dots">...</span>
                             <span class="more">
                                 The subject area for this study will preferably be the Rawal dam. The analysis will be performed on the data of the last ten years and predictive analytic will be performed to project the water quality for the near future. This analysis would help us to identify various factors (such as increased air pollution, weather conditions) that are contributing to polluting the surface water and how remedial measures can be put in place to mitigate the decreasing water quality. The time series analysis & visualization and predictive analytic service will be developed on a web portal.
                             </span>
-                            <a class="read">read more</a>
-                        </p>
+                            <a class="read">More about this project</a> -->
+                
+                        <a href="project2.html">&nbsp...More</a></p>
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">
                         <h4 class="widget-title"></h4>
@@ -253,14 +266,18 @@
     
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Enhanced Water Quality Monitoring and Estimation by Exploiting Multi-modal Approach
-                        </h4>
-                        <p>With the advent of new technologies such as the Internet of Things (IoT), the water quality can be measured and reported in real-time. However, the limitation of this approach is that it provides point data which is insufficient to represent the entire water body quality unless the water samples are collected from a large number of points and for long durations. The collection of data from multiple points in a water body is not feasible particularly if the data collection sites are difficult to access due to complex terrain or other resources. 
-                            <span class="dots">...</span>
+                        <a href="project3.html">  <h4 class="widget-title">Enhanced Water Quality Monitoring and Estimation by Exploiting Multi-modal Approach
+                        </h4></a>
+                        <p class="edited"> PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                            Project Duration: N/A<br>
+                            Funded Grant: N/A <br>
+                            Funding Agnecy: N/A <br></p>
+                        <p><br>With the advent of new technologies such as the Internet of Things (IoT), the water quality can be measured and reported in real-time. However, the limitation of this approach is that it provides point data which is insufficient to represent the entire water body quality unless the water samples are collected
+                            <!-- <span class="dots">...</span>
                             <span class="more">
                                 In contrast to this approach, the data collected from remotely sensed satellite imagery provide ample details about the entire water body, however, the data acquisition is constrained by satellite revisit time and the quality of estimates is effected by image resolution. In addition to this, the GIS data collected from labs can be useful for providing higher resolution and accurate data and can be used as a ground truth. However, the lab measurements are done manually which consume a substantial amount of time and creates a delay for data synthesis and assimilation. In view of the above, we proposed an enhanced water quality monitoring and estimation system that integrates the above approaches to overcome the limitations of these existing methods. The study area of this research work will preferably be Rawal Dam. The monitoring and estimation of water quality will be based on machine learning models applied on the ensemble data acquired from satellite imagery, GIS, and IoT nodes. The web service for providing the enhanced water quality estimates will be made and the water quality parameters extracted from multiple data sources will be archived on the web portal. For improved visualization and analysis basic and advanced data analytic features will be added on the web portal.  In order to visualize the water quality of the water body, heat maps will be generated, where the color codes will classify the level of water quality.
-                            </span>
-                            <a class="read">read more</a>
+                            </span> --> 
+                            <a href="project3.html">&nbsp...More</a></p>
                         </p>
                     </div> 
                     <div class="col-md-4 our-skills">
@@ -275,13 +292,19 @@
     
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Livestock Monitoring using IoT and AI
-                        </h4>
-                        <p>Livestock producers lose approximately $21 billion annually due to animal
+                        <a href="project4.html"> <h4 class="widget-title">Livestock Monitoring using IoT and AI
+                        </h4></a>
+                        <p class="edited"> PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                            Project Duration: N/A<br>
+                            Funded Grant: N/A <br>
+                            Funding Agnecy: N/A <br></p>
+
+                        <p>
+                            <br> Livestock producers lose approximately $21 billion annually due to animal
                             diseases (UN). This carries over to consumers of dairy products in the form
                             of malnutrition and bacterial diseases. The challenge remains to come up
-                            with an ingenious solution to remove inefficiencies in the livestock industry.
-                            Collar is attached to animal that has different sensors to detect temperature, humidity, heart rate, body conditions, lameness, behaviour activity etc. Animal collar sent data to fixed unit that is loacted into farm using Lora Module. Fixed unit is used to sent data to cloud for processing using Machine Learning model and results displayed on mobile app in form of alert and suggestions. 
+                            with an ingenious solution to remove inefficiencies in the livestock industry
+                            <a href="project4.html">&nbsp...More</a></p> 
     
                     </p>
                     </div> 
@@ -297,14 +320,18 @@
     
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Combating COVID-19 Using Internet of Medical Devices (IoMD) and AI
-                        </h4>
+                        <a href="project5.html">  <h4 class="widget-title">Combating COVID-19 Using Internet of Medical Devices (IoMD) and AI
+                        </h4></a>
+                        <p class="edited"> PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                            Project Duration: N/A<br>
+                            Funded Grant: N/A <br>
+                            Funding Agnecy: N/A <br></p>
                         <p> 
-                            World is facing pandemic due widespread of Novel Corona Virus COVID-19. This pandemic has already infected approx 130 Million people and 2.83 Million people died.
-                            
-                            Ambient sensors and multiple wearable is used to collect data of patient and his/her environment. Body parameters includes body temperature, heart rate, and body saturation. Environmental parameters includes CO, CO2, Dust and O3 to generate air quality index. The data sent to gateway node where edge computing performed and Machine Learning algorithms deployed to perform dicison making. 
-                            The preprocessed data from edge computing will be transefered to Cloud for analysis where Artificial Intelligence techniques applied for predictive analysis of patient's health that would be displayed on a user authorized web portal. 
-                    </p>
+                          <br>  World is facing pandemic due widespread of Novel Corona Virus COVID-19. This pandemic has already infected approx 130 Million people and 2.83 Million people died. Ambient sensors and multiple wearable is used to collect data of patient and his/her environment
+                          <!-- Body parameters includes body temperature, heart rate, and body saturation. Environmental parameters includes CO, CO2, Dust and O3 to generate air quality index. The data sent to gateway node where edge computing performed and Machine Learning algorithms deployed to perform dicison making. 
+                            The preprocessed data from edge computing will be transefered to Cloud for analysis where Artificial Intelligence techniques applied for predictive analysis of patient's health that would be displayed on a user authorized web portal.  -->
+                            <a href="project5.html">&nbsp...More</a></p>
+                        </p>
                     </div> 
                     <div class="col-md-4 our-skills">
                         <h4 class="widget-title"></h4>
@@ -320,9 +347,16 @@
 
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Crop Health Monitoring Using IoT
-                                                </h4>
-                        <p>An IoT based solution for crop health monitoring using multiple sensors to collect real-time data from the fields. In addition to this, a drone is used with a  multi-spectral camera mounted on it to acquire spectral images. The spectral images are used for Normalized Differences Vegetation Index (NDVI) mapping,  The data from IoT sensors and NDVI images are integrated to generate crop health maps to provide rich and enhanced information about crop health status, which is not achievable while using only NDVI data. A web portal is developed with a dashboard of web services for image & data analysis, visualization, and data retrieval. The prototype was deployed in NARC, Islamabad, for real-time data acquisition.</p>
+                        <a href="project6.html">  <h4 class="widget-title">Crop Health Monitoring Using IoT
+                                                </h4></a>
+                     <p class="edited"> PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                                                    Project Duration: N/A<br>
+                                                    Funded Grant: N/A <br>
+                                                    Funding Agnecy: N/A <br></p>
+                     
+                        <p><br>An IoT based solution for crop health monitoring using multiple sensors to collect real-time data from the fields. In addition to this, a drone is used with a  multi-spectral camera mounted on it to acquire spectral images
+                        <a href="project6.html">&nbsp...More</a></p>
+                     
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">
                         <h4 class="widget-title"></h4>
@@ -336,9 +370,17 @@
     
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Indoor Air Quality Monitoring Using IoT and Predictive Analytic
-                                                </h4>
-                        <p>An IoT based solution designed to monitor the air contaminants such as PM2.5, Carbon dioxide, Carbon monoxide, NItrogen dioxide, Methane. The system is capable of reporting air quality status to the web portal in real-time and generates alerts accordingly. The system not only classifies the quality of indoor air but also projects its future instances with competitive accuracy.
+                        <a href="project7.html">    <h4 class="widget-title">Indoor Air Quality Monitoring Using IoT and Predictive Analytic
+                                                </h4></a>
+                                                <p class="edited"> PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                                                    Project Duration: N/A<br>
+                                                    Funded Grant: N/A <br>
+                                                    Funding Agnecy: N/A <br></p>
+                                                <p> 
+                        <p>
+                            <br>
+                            An IoT based solution designed to monitor the air contaminants such as PM2.5, Carbon dioxide, Carbon monoxide, NItrogen dioxide, Methane
+                            <a href="project7.html">&nbsp...More</a></p>
                         </p>
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">
@@ -353,10 +395,15 @@
     
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Surface Water Pollution Monitoring Using IoT for Predictive Healthcare
-                                                </h4>
-                        <p>An IoT based water quality monitoring solution that monitors water quality parameters such as pH level, turbidity, temperature, conductivity, and dissolved oxygen in real-time. The system generates the Water Quality Index (WQI) map of the region of interest. The system performs classification as well as bacteria prediction using machine learning algorithms. A web portal is developed to archive the collected data and perform basic and advanced data analytics.
-                        </p>
+                        <a href="project8.html"><h4 class="widget-title">Surface Water Pollution Monitoring Using IoT for Predictive Healthcare
+                                                </h4></a>
+                                                <p class="edited"> PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                                                    Project Duration: N/A<br>
+                                                    Funded Grant: N/A <br>
+                                                    Funding Agnecy: N/A <br></p>
+                                                <p> 
+                        <p> <br>An IoT based water quality monitoring solution that monitors water quality parameters such as pH level, turbidity, temperature, conductivity, and dissolved oxygen in real-time
+                            <a href="project8.html">&nbsp...More</a></p>    </p>
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">
                         <h4 class="widget-title"></h4>
@@ -370,10 +417,15 @@
     
                 <div class="row">
                     <div class="col-md-8">
-                        <h4 class="widget-title">Water Quality Data Extraction From Handwritten Documents Using Deep Learning
-                        </h4>
-                        <p>The aim of this project is to develop a deep learning system for digitizing tabular data containing handwritten text. The system is primarily targeted at digitizing the water quality recordings at the Rawal Lake filtration plant in Islamabad, erasing the dependency on the large volumes of physical records and making the data accessible for analytics and machine learning. A web portal along with a mobile application is also developed. Through these applications, end users can access the system and digitize their own documents, which are then stored in the cloud and can be retrieved any time.
-    
+                        <a href="project9.html"><h4 class="widget-title">Water Quality Data Extraction From Handwritten Documents Using Deep Learning
+                        </h4></a>
+                        <p class="edited"> PI: <span style="font-weight: 500;">Doctor Rafia Mumtaz </span><br>
+                            Project Duration: N/A<br>
+                            Funded Grant: N/A <br>
+                            Funding Agnecy: N/A <br></p>
+                        <p> 
+                        <p> <br>The aim of this project is to develop a deep learning system for digitizing tabular data containing handwritten text. The system is primarily targeted at digitizing the water quality recordings at the Rawal Lake
+                            <a href="project9.html">&nbsp...More</a></p>
                         </p>
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">

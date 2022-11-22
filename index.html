@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="css/templatemo-misc.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/templatemo-main.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="js/mail.js"></script>
     
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     
@@ -62,7 +66,7 @@
                     <div class="col-md-6 col-sm-6">
                         <div class="left-header">
                             <span><i class="fa fa-phone"></i>051-90852161</span>
-                            <span><i class="fa fa-envelope"></i>iotlab@seecs.edu.pk</span>
+                            <span><i class="fa fa-envelope"></i>rafia.mumtaz@seecs.edu.pk</span>
                         </div> <!-- /.left-header -->
                     </div> <!-- /.col-md-6 -->
                     <div class="col-md-6 col-sm-6">
@@ -96,34 +100,24 @@
                         <div class="menu text-right hidden-sm hidden-xs">
     
                             <ul>
-                                <li><a href="#Home">Home</a></li>
+                                <li><a onclick="location.href=''" href="#Home">Home</a></li>
                                 
                                 <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
-                                
-                                <li class="dropdown">
-                                    <button class="dropbtn">TEAM</button>
-                                    <div class="dropdown-content">
-                                      <a onclick="location.href='team-core.html'" href="team-core.html">Core Team</a>
-                                      <a onclick="location.href='team-rd.html'" href="team-rd.html">R & D Team</a>
-                                    </div>
-                                </li>
-
-                                <!-- <li><a href="#portfolio">TEAM</a></li> -->
                                 <li><a onclick="location.href='projects.html'" href="projects.html">Projects</a></li>
-                                <li><a onclick="location.href='publications.html'" href="publications.html">Publications</a></li>
-                                <!-- <li><a onclick="location.href='achievements.html'" href="achievements.html">ACHIEVEMENT</a></li> -->
-                                <!-- <li class="dropdown">
-                                    <button class="dropbtn">ACHIEVEMENT</button>
-                                    <div class="dropdown-content">
-                                      <a onclick="location.href='achievements-award.html'" href="achievements-award.html">Honor & award</a>
-                                      <a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research grant</a>
-                                    </div>
-                                </li> -->
-                                <li><a onclick="location.href='achievements-award.html'" href="achievements-award.html">Awards</a></li>
-                                
-                                <li><a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research grant</a></li>
+                                <li> <a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research Grants</a>
+                                </li> 
+                                <li><a onclick="location.href='team.html'" href="team.html" style="text-align:left">Team</a></li>
 
-                                <li><a onclick="location.href='collaboration.html'" href="collaboration.html">collaborations</a></li>
+                            
+                                <li class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">MORE</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a onclick="location.href='publications.html'" href="publications.html" style="text-align: left ">Publications</a>
+                                      
+                                            <a onclick="location.href='achievements-award.html'" href="achievements-award.html" style="text-align:left">Awards</a>
+                                    </div>
+                                  </div>
+                                 
                             </ul>
                         </div> <!-- /.menu -->
                     </div> <!-- /.col-md-8 -->
@@ -136,13 +130,7 @@
                             
                             <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
                             
-                            <li class="dropdown">
-                                <button class="dropbtn">TEAM</button>
-                                <div class="dropdown-content">
-                                  <a onclick="location.href='team-core.html'" href="team-core.html">Core Team</a>
-                                  <a onclick="location.href='team-rd.html'" href="team-rd.html">R & D Team</a>
-                                </div>
-                            </li>
+                            <li><a onclick="location.href='team.html'" href="team.html" style="text-align:left">Team</a></li>
 
                             <!-- <li><a href="#portfolio">TEAM</a></li> -->
                             <li><a onclick="location.href='projects.html'" href="projects.html">Projects</a></li>
@@ -150,7 +138,7 @@
                             <!-- <li><a onclick="location.href='achievements.html'" href="achievements.html">ACHIEVEMENT</a></li> -->
                             <li><a onclick="location.href='achievements-award.html'" href="achievements-award.html">Awards</a></li>
                                 
-                                <li><a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research grant</a></li>
+                                <li><a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research grants</a></li>
 
                                 <li><a onclick="location.href='collaboration.html'" href="collaboration.html">collaborations</a></li>
                             
@@ -163,14 +151,6 @@
 
     <div class="flexslider">
         <ul class="slides">
-            <li>
-                <img height="440px" src="images/slider/iot.webp" alt="">
-                <div class="flex-caption">
-                    <h2></h2>
-                    <span></span>
-                    <p></p>
-                </div>
-            </li>
             <li>
                 <img src="images/slider/group.webp" alt="">
                 <div class="flex-caption">
@@ -328,16 +308,6 @@
             </li> -->
 
             <li>
-                <img src="images/slider/RISE_event2.jpeg" alt="">
-                <div class="flex-caption">
-                    <h2></h2>
-                    <span></span>
-                    <p>Representing projects in RISE event
-                    </p>
-                </div>
-            </li>
-
-            <li>
                 <img src="images/slider/airnode.webp" alt="">
                 <div class="flex-caption">
                     <h2></h2>
@@ -350,7 +320,7 @@
     </div>
 
     <div id="services" class="section-cotent">
-        <div class="container">
+        <div class="container container1">
             <!-- <div class="title-section text-center"> -->
                 <!-- <h2></h2> -->
                 <!-- <span></span> -->
@@ -398,10 +368,10 @@
         </div> <!-- /.container -->
     </div> <!-- /#services -->
 
-    <div id="portfolio" class="section-content">
-        <div class="container">
+    <div id="portfolio" class="title-section text-center">
+        <div class="container container2">
             <div class="title-section text-center">
-                <h2>Our Key Connections</h2>
+                <h2>Our Key Connections and Collaborations</h2>
                 <span></span>
             </div> <!-- /.title-section -->
             <div class="row">
@@ -535,22 +505,32 @@
                     <div class="contact-form">
                         <p class="full-row">
                             <label for="name-id">Your Name:</label>
-                            <input type="text" id="name-id" name="name-id">
+                            <input type="text" id="thename" name="name-id" required>
                         </p>
                         <p class="full-row">
                             <label for="email-id">Email:</label>
-                            <input type="text" id="email-id" name="email-id">
+                            <form name="form" action="" method="post">
+                                <input type="text" id="themail" name="email-id" required>
+                              </form>
+                           
                         </p>
                         <p class="full-row">
                             <label for="subject-id">Subject:</label>
-                            <input type="text" id="subject-id" name="subject-id">
+                           
+                            <form name="form" action="" method="post">
+                                <input type="text" id="subject-id" name="subject-id" required>
+                              </form>
                         </p>
                         <p class="full-row">
                             <label for="message">Message:</label>
-                            <textarea name="message" id="message" rows="6"></textarea>
+                            
+                            <textarea name="message" id="themsg" rows="6" required></textarea>
                         </p>
-                        <input class="mainBtn" type="submit" name="" value="Send Message">
+                        
+                        <button class="mainBtn" style="margin-top:10px;" onCLick="sendemail()">Send</button>
+                         
                     </div>
+                    
                 </div> <!-- /.col-md-3 -->
                 <div class="col-md-5 col-sm-6">
                     <h4 class="widget-title">Our location</h4>
@@ -564,7 +544,7 @@
                         <span><i class="fa fa-home"></i>IoT Lab, SEECS, NUST H-12, Islamabad, Pakistan </span>
                         <span><i class="fa fa-phone"></i>051-90852161</span>
                         <!-- <span><i class="fa fa-envelope"></i>rafia.mumtaz@seecs.edu.pk</span> -->
-                        <span><i class="fa fa-envelope"></i>iotlab@seecs.edu.pk</span>
+                        <span><i class="fa fa-envelope"></i>rafia.mumtaz@seecs.edu.pk</span>
                     </div>
                 </div> <!-- /.col-md-3 -->
             </div> <!-- /.row -->
@@ -588,11 +568,13 @@
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /.site-footer -->
+  
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/custom.js"></script>
+    
     <script type="text/javascript">
 
         function initialize() {
@@ -620,4 +602,5 @@
 
 
 </body>
+
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>IoT Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <!-- 
+    Compass Template
+    http://www.templatemo.com/tm-454-compass
+    -->
+    <meta charset="UTF-8">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/templatemo-misc.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo-main.css">
+        
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    
+    <!-- JavaScripts -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+        </div>
+    <![endif]-->
+    <style>
+        
+
+
+                /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class #004879 */ 
+.tab button.active {
+  background-color: #004879;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.more {display: none;}
+
+    </style>
+
+<script src="js/script.js"></script>
+</head>
+<body>
+    
+    <div id="home">
+        <div class="site-header">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="left-header">
+                                <span><i class="fa fa-phone"></i>051-90852161</span>
+                                <span><i class="fa fa-envelope"></i>rafia.mumtaz@seecs.edu.pk</span>
+                            </div> <!-- /.left-header -->
+                        </div> <!-- /.col-md-6 -->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="right-header text-right">
+                                <ul class="social-icons">
+                                    <li><a href="https://www.linkedin.com/in/rafia-mumtaz-6817b535/" class="fa fa-linkedin"></a></li>
+                                    <li><a href="https://scholar.google.com/citations?user=i6qLmkkAAAAJ&hl=en&oi=ao" class="fa fa-google-plus"></a></li>
+                                    <li><a href="https://twitter.com/RafiaMumtaz4" class="fa fa-twitter"></a></li>
+                                </ul>
+                            </div> <!-- /.left-header -->
+                        </div> <!-- /.col-md-6 -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+            </div> <!-- /.top-header -->
+            
+            <div class="main-header">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-md-1 col-sm-1 col-xs-6">
+                            <div class="logo">
+                                <!-- <h1><a href="index.html" title="Dreri">Internet of Things Lab</a></h1> -->
+                                <a href="index.html" title="Dreri"><img src="images/lab-icon.png" height="60px" alt=""></a>
+                            </div> <!-- /.logo -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-11 col-sm-11 col-xs-6">
+                            <div class="menu text-right hidden-sm hidden-xs">
+        
+                                <ul>
+                                    <li><a onclick="location.href='index.html'">Home</a></li>
+                                    
+                                    <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
+                                    <li><a onclick="location.href='projects.html'" class="current">Projects</a></li>
+                                    <li> <a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research Grants</a>
+                                    </li> 
+    
+    
+                                    <li class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">TEAM</button>
+                                        <div class="dropdown-content">
+                                          <a onclick="location.href='team-core.html'" href="team-core.html" style="text-align:left">Core Team</a>
+                                          <a onclick="location.href='team-rd.html'" href="team-rd.html" style="text-align:left">R & D Team</a>
+                                        </div>
+                                    </li>
+    
+                                
+                                    <li class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">MORE</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a onclick="location.href='publications.html'" href="publications.html" style="text-align: left ">Publications</a>
+                                            
+                                          
+                                                <a onclick="location.href='achievements-award.html'" href="achievements-award.html" style="text-align:left">Awards</a>
+                                        </div>
+                                      </div>
+                                     
+                                </ul>
+                            </div> <!-- /.menu -->
+                        </div> <!-- /.col-md-8 -->
+                    </div> <!-- /.row -->
+                    <div class="responsive-menu text-right visible-xs visible-sm">
+                        <a href="#" class="toggle-menu fa fa-bars"></a>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#Home">Home</a></li>
+                                
+                                <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
+                                
+                                <li class="dropdown">
+                                    <button class="dropbtn">TEAM</button>
+                                    <div class="dropdown-content">
+                                      <a onclick="location.href='team-core.html'" href="team-core.html">Core Team</a>
+                                      <a onclick="location.href='team-rd.html'" href="team-rd.html">R & D Team</a>
+                                    </div>
+                                </li>
+    
+                                <!-- <li><a href="#portfolio">TEAM</a></li> -->
+                                <li><a onclick="location.href='projects.html'"class="current">Projects</a></li>
+                                <li><a onclick="location.href='publications.html'" href="publications.html">Publications</a></li>
+                                <!-- <li><a onclick="location.href='achievements.html'" href="achievements.html">ACHIEVEMENT</a></li> -->
+                                <li><a onclick="location.href='achievements-award.html'" href="achievements-award.html">Awards</a></li>
+                                
+                                <li><a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research grant</a></li>
+                                <li><a onclick="location.href='collaboration.html'" href="collaboration.html">collaborations</a></li>
+
+                            </ul>
+                        </div> <!-- /.menu -->
+                    </div> <!-- /.responsive-menu -->
+                </div> <!-- /.container -->
+            </div> <!-- /.header -->
+        </div> <!-- /.site-header -->
+    </div> <!-- /#home -->
+
+    
+    
+    <h1 class="project-title">Water Quality Data Extraction From Handwritten Documents Using Deep Learning</h1>
+
+    <p class="project-text">
+        <br>
+        The aim of this project is to develop a deep learning system for digitizing tabular data containing handwritten text. The system is primarily targeted at digitizing the water quality recordings at the Rawal Lake filtration plant in Islamabad, erasing the dependency on the large volumes of physical records and making the data accessible for analytics and machine learning. A web portal along with a mobile application is also developed. Through these applications, end users can access the system and digitize their own documents, which are then stored in the cloud and can be retrieved any time.
+    </p>
+</body>
+<div style="text-align:center; margin-top:50px">
+    <a href="projects.html" class="btnp">Back to Projects</a>
+</div>
